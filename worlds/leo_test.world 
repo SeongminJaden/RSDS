@@ -1,0 +1,31 @@
+<sdf version="1.6">
+  <world name="leo_world">
+    <physics type="ode">
+      <gravity>0 0 0</gravity> <!-- Disable default Earth gravity -->
+      <ode>
+        <solver>
+          <type>quick</type>
+        </solver>
+      </ode>
+    </physics>
+
+    <!-- Include satellite model -->
+    <include>
+      <uri>model://satellite</uri>
+      <pose>0 0 500000 0 0 0</pose>
+    </include>
+
+    <!-- Sun and sky for visualization -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://sky</uri>
+    </include>
+
+    <!-- World plugin for LEO gravity -->
+    <plugin name="leo_gravity_world" filename="libleo_gravity_plugin.so">
+      <ggm_file>$(find RSDS)/data/GGM05C.gfc</ggm_file>
+    </plugin>
+  </world>
+</sdf>

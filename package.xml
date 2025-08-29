@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>RSDS</name>
+  <version>0.1.0</version>
+  <description>
+    ROS 2 Humble plugin for simulating LEO gravity using GGM05C model.
+  </description>
+
+  <maintainer email="roboticsmaster@naver.com">Seongmin Jaden Lee</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend>
+  <depend>gazebo</depend>
+  <depend>ignition-math6</depend>
+
+  <export>
+    <gazebo_plugin/>
+  </export>
+</package>
