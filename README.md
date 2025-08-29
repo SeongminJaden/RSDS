@@ -97,7 +97,7 @@ $$
 
 ### 4. Conversion to Cartesian Coordinates
 
-To apply in Gazebo, convert spherical accelerations \$(a\_r, a\_\phi, a\_\lambda)\$ to Cartesian \$(a\_x, a\_y, a\_z)\$:
+To apply in Gazebo, convert spherical accelerations $$\$(a\_r, a\_\phi, a\_\lambda)\$ to Cartesian \$(a\_x, a\_y, a\_z)\$$$:
 
 $$
 a_x = a_r \cos\phi \cos\lambda - a_\phi \sin\phi \cos\lambda - a_\lambda \sin\lambda
@@ -112,9 +112,9 @@ a_z = a_r \sin\phi + a_\phi \cos\phi
 $$
 
 ### 5. GGM05C Coefficients
-- Provided as $\bar{C}_{n,m}$ and $\bar{S}_{n,m}$
+- Provided as $$\bar{C}_{n,m}$$ and $$\bar{S}_{n,m}$$
 - Derived from GRACE satellite observations
-- Typical truncation for simulation: $n_{max} = 20 \sim 50$
+- Typical truncation for simulation: $$n_{max} = 20 \sim 50$$$
 
 ### 6. Applying Forces in Gazebo
 Each satellite's force is computed as:
