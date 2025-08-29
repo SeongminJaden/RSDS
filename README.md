@@ -49,8 +49,9 @@ LEO(저궤도) 위성 환경의 위치-의존적 중력을 시뮬레이션하는
 구면조화 함수(Spherical Harmonics)로 전개됩니다.
 
 퍼텐셜:
+```bash
 V(r, phi, lambda) = GM / r * ( 1 + sum_{n=2}^{∞} (a/r)^n * sum_{m=0}^{n} P̄_{n,m}(sin phi) * [ C̄_{n,m} cos(m lambda) + S̄_{n,m} sin(m lambda) ] )
-
+```
 
 - \( GM \): 지구 표준 중력상수 (WGS84 기준 \( 3.986004418 \times 10^{14}\, m^3/s^2 \))  
 - \( a \): 기준 지구 반경 (WGS84 기준 \( 6378137.0\, m \))  
