@@ -36,11 +36,9 @@ The gravitational potential considering the Earth's oblateness and mass distribu
 $$
 V(r, \phi, \lambda) = \frac{GM}{r} 
 \left(
-  1 + \sum_{n=2}^{\infty} \left(\frac{a}{r}\right)^n 
-  \sum_{m=0}^{n} \bar{P}_{n,m}(\sin \phi)
-  \Big[
-    \bar{C}_{n,m}\cos(m\lambda) + \bar{S}_{n,m}\sin(m\lambda)
-  \Big]
+ 1 + \sum_{n=2}^{\infty} \left(\frac{a}{r}\right)^n 
+ \sum_{m=0}^{n} \bar{P}_{n,m}(\sin \phi)
+ \Big[\bar{C}_{n,m}\cos(m\lambda) + \bar{S}_{n,m}\sin(m\lambda)\Big]
 \right)
 $$
 
