@@ -99,14 +99,17 @@ $$
 
 To apply in Gazebo, convert spherical accelerations \$(a\_r, a\_\phi, a\_\lambda)\$ to Cartesian \$(a\_x, a\_y, a\_z)\$:
 
-$$$
-a_x = a_r \cos\phi \cos\lambda - a_\phi \sin\phi \cos\lambda - a_\lambda \sin\lambda$$
-$$$
+$$
+a_x = a_r \cos\phi \cos\lambda - a_\phi \sin\phi \cos\lambda - a_\lambda \sin\lambda
+$$
 
+$$
 a\_y = a\_r \cos\phi \sin\lambda - a\_\phi \sin\phi \sin\lambda + a\_\lambda \cos\lambda\$\$
+$$
 
-$$$
-a_z = a_r \sin\phi + a_\phi \cos\phi$$
+$$
+a_z = a_r \sin\phi + a_\phi \cos\phi
+$$
 
 ### 5. GGM05C Coefficients
 - Provided as $\bar{C}_{n,m}$ and $\bar{S}_{n,m}$
@@ -116,10 +119,8 @@ a_z = a_r \sin\phi + a_\phi \cos\phi$$
 ### 6. Applying Forces in Gazebo
 Each satellite's force is computed as:
 
-$$$
-
+$$
 \mathbf{F} = m \mathbf{a}
-
 $$
 
 where $m$ is the satellite mass and $\mathbf{a}$ is the gravity acceleration vector. The plugin applies this force at every simulation step.
