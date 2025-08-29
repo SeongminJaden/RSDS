@@ -112,7 +112,9 @@ a_z = a_r \sin\phi + a_\phi \cos\phi
 $$
 
 ### 5. GGM05C Coefficients
-- Provided as $$\bar{C}_{n,m}$$ and $$\bar{S}_{n,m}$$
+- Provided as $$\bar{C}_{n,m}$$
+  and
+  $$\bar{S}_{n,m}$$
 - Derived from GRACE satellite observations
 - Typical truncation for simulation: $$n_{max} = 20 \sim 50$$$
 
