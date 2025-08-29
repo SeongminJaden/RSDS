@@ -34,8 +34,16 @@ The plugin calculates the gravitational acceleration on satellites in LEO using 
 The gravitational potential considering the Earth's oblateness and mass distribution is expanded using spherical harmonics:
 
 $$
-V(r, \phi, \lambda) = \frac{GM}{r} \left(1 + \sum_{n=2}^{\infty} \left(\frac{a}{r}\right)^n \sum_{m=0}^{n} \bar{P}_{n,m}(\sin \phi)\Big[\bar{C}_{n,m}\cos(m\lambda) + \bar{S}_{n,m}\sin(m\lambda)\Big]\right)
+V(r, \phi, \lambda) = \frac{GM}{r} 
+\left(
+  1 + \sum_{n=2}^{\infty} \left(\frac{a}{r}\right)^n 
+  \sum_{m=0}^{n} \bar{P}_{n,m}(\sin \phi)
+  \Big[
+    \bar{C}_{n,m}\cos(m\lambda) + \bar{S}_{n,m}\sin(m\lambda)
+  \Big]
+\right)
 $$
+
 
 Where:
 
